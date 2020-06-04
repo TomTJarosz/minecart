@@ -5,7 +5,7 @@ README = path.join(path.dirname(path.abspath(__file__)), "README.rst")
 
 setup(
     name="minecart",
-    version="0.3.0",
+    version="0.3.1",
     description=("Simple, Pythonic extraction of images, text, and shapes "
                  "from PDFs"),
     long_description=open(README).read(),
@@ -24,7 +24,7 @@ setup(
         'License :: OSI Approved :: MIT License',
     ],
     keywords='pdf pdfminer extract mining images',
-    install_requires=['pdfminer3k', 'six'],
+    install_requires=['pdfminer>=20191010', 'six'],
     extras_require={
         'PIL': ['Pillow'],
     },
